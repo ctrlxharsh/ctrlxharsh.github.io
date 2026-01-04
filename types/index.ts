@@ -1,4 +1,4 @@
-export type ProjectCategory = "research" | "system" | "fun" | "tool" | "product";
+export type ProjectCategory = string;
 export type ProjectTier = "flagship" | "experiment";
 
 export interface Project {
@@ -12,10 +12,11 @@ export interface Project {
     tech: string[];
     image?: string; // Path to image in public
     links: {
-        github?: string;
+        github?: string | string[];
         demo?: string;
         paper?: string;
         slides?: string;
+        video?: string;
     };
     showInTimeline: boolean;
     researchOutput?: string; // ID of related research

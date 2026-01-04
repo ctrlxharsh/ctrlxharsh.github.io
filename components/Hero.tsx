@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import SocialLinks from "./SocialLinks";
 
 export default function Hero() {
     return (
@@ -26,19 +27,22 @@ export default function Hero() {
                         Building systems that bridge the gap between research and reality.
                     </p>
 
-                    <div className="flex flex-wrap gap-4 pt-2">
-                        <Link
-                            href="/projects"
-                            className="inline-flex items-center justify-center rounded-full bg-neutral-900 px-8 py-3 text-sm font-medium text-white transition-colors hover:bg-neutral-800 dark:bg-white dark:text-neutral-900 dark:hover:bg-neutral-200"
-                        >
-                            View Projects
-                        </Link>
-                        <Link
-                            href="/research"
-                            className="inline-flex items-center justify-center rounded-full border border-neutral-200 bg-transparent px-8 py-3 text-sm font-medium text-foreground transition-colors hover:bg-neutral-100 dark:border-neutral-800 dark:hover:bg-neutral-900"
-                        >
-                            Research
-                        </Link>
+                    <div className="flex flex-wrap items-center gap-6 pt-2">
+                        <div className="flex gap-4">
+                            <Link
+                                href="/projects"
+                                className="inline-flex items-center justify-center rounded-full bg-neutral-900 px-8 py-3 text-sm font-medium text-white transition-colors hover:bg-neutral-800 dark:bg-white dark:text-neutral-900 dark:hover:bg-neutral-200"
+                            >
+                                View Projects
+                            </Link>
+                            <Link
+                                href="/research"
+                                className="inline-flex items-center justify-center rounded-full border border-neutral-200 bg-transparent px-8 py-3 text-sm font-medium text-foreground transition-colors hover:bg-neutral-100 dark:border-neutral-800 dark:hover:bg-neutral-900"
+                            >
+                                Research
+                            </Link>
+                        </div>
+                        <SocialLinks />
                     </div>
                 </div>
 
