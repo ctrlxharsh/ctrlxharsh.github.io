@@ -6,14 +6,11 @@ export default function Hero() {
         <section className="min-h-[80vh] flex flex-col justify-center px-6 max-w-5xl mx-auto pt-24">
             <div className="space-y-6">
                 <div className="inline-flex items-center rounded-full border border-neutral-200 bg-neutral-50 px-3 py-1 text-sm text-neutral-600 dark:border-neutral-800 dark:bg-neutral-900/50 dark:text-neutral-400">
-                    <div className="relative h-5 w-5 mr-2 overflow-hidden rounded-full">
-                        <Image
-                            src="/logo.png"
-                            alt="Logo"
-                            fill
-                            className="object-cover"
-                        />
-                    </div>
+                    <img
+                        src="https://simpleicons.org/icons/researchgate.svg"
+                        alt=""
+                        className="w-4 h-4 mr-2"
+                    />
                     Available for Research Collaborations
                 </div>
 

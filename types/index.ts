@@ -20,7 +20,7 @@ export interface Project {
     researchOutput?: string; // ID of related research
 }
 
-export type ResearchType = "paper" | "workshop" | "conference-presentation";
+export type ResearchType = "paper" | "workshop" | "conference-presentation" | "conference" | "ongoing";
 
 export interface Research {
     id: string;

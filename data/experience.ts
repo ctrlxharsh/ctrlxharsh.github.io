@@ -2,6 +2,7 @@ export interface Experience {
     id: string;
     role: string;
     company: string;
+    type: "full-time" | "part-time" | "internship" | "remote" | "leadership";
     period: string;
     startDate: string; // ISO format YYYY-MM-DD for sorting
     description: string[];
@@ -10,8 +11,9 @@ export interface Experience {
 export const experience: Experience[] = [
     {
         id: "fieldintelai",
-        role: "AI Engineer Intern (Remote, Part-Time)",
+        role: "AI Engineer Intern",
         company: "FieldIntelAI, SavGen",
+        type: "remote",
         period: "Nov 2025 - Present",
         startDate: "2025-11-01",
         description: [
@@ -24,6 +26,7 @@ export const experience: Experience[] = [
         id: "iit-bhu",
         role: "Research Intern",
         company: "Indian Institute of Technology (BHU), Varanasi",
+        type: "internship",
         period: "Dec 2025 - Present",
         startDate: "2025-12-01",
         description: [
@@ -36,6 +39,7 @@ export const experience: Experience[] = [
         id: "mts-auv",
         role: "Computer Team Lead",
         company: "MTS Autonomous Underwater Vehicle Club, ZHCET",
+        type: "leadership",
         period: "May 2023 - Present",
         startDate: "2023-05-01",
         description: [

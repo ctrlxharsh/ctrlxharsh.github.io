@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
 
 export const metadata: Metadata = {
-  title: "Harsh | AI Engineer & Researcher",
+  title: "ctrlxharsh",
   description: "Portfolio of Harsh - Computer Vision, Agentic AI, and Systems Engineering.",
 };
 

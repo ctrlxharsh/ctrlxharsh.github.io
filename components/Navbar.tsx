@@ -11,16 +11,18 @@ export default function Navbar() {
     const navLinks = [
         { name: "Projects", href: "/projects" },
         { name: "Research", href: "/research" },
+        { name: "Experience", href: "/experience" },
+        { name: "Achievements", href: "/achievements" },
         { name: "Journey", href: "/journey" },
-        // { name: "Gallery", href: "/gallery" },
     ];
 
     return (
-        <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-2xl">
+        <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl">
             <div className={`glass rounded-3xl px-6 py-3 shadow-sm transition-all duration-300 ${isOpen ? 'bg-white/90 dark:bg-neutral-900/90 backdrop-blur-md' : ''}`}>
                 <div className="flex items-center justify-between">
-                    <Link href="/" className="font-outfit font-bold text-lg tracking-tight hover:opacity-70 transition-opacity z-50 relative">
-                        ctrlxharsh
+                    <Link href="/" className="flex items-center gap-2 font-outfit font-bold text-lg tracking-tight hover:opacity-70 transition-opacity z-50 relative">
+                        <img src="https://simpleicons.org/icons/artifacthub.svg" alt="" className="w-5 h-5" />
+                        Harsh Awasthi
                     </Link>
 
                     {/* Desktop Menu */}
