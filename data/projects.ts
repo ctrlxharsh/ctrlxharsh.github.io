@@ -102,5 +102,22 @@ export const projects: Project[] = [
         links: { github: "https://github.com/ctrlxharsh/Lib_Management_Sys" },
         showInTimeline: false,
     },
-
+    {
+        id: "HeartImage",
+        title: "Shape-Aware Template Mosaic Generation",
+        tier: "experiment",
+        category: "Fun",
+        date: "2025-01-19",
+        shortDescription: "a technique that reconstructs an image by replacing pixel blocks with color-adapted shape templates, preserving global structure while producing a stylized mosaic representation.",
+        tech: [
+            "C++",
+            "OOP",
+            "CSV",
+            "RegEx",
+            "G++",
+            "Git"
+        ],
+        links: { github: "https://github.com/ctrlxharsh/Lib_Management_Sys" },
+        showInTimeline: false,
+    },
 ];

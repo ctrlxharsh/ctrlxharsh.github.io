@@ -9,8 +9,55 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
 
 export const metadata: Metadata = {
-  title: "ctrlxharsh",
-  description: "Portfolio of Harsh - Computer Vision, Agentic AI, and Systems Engineering.",
+  metadataBase: new URL('https://ctrlxharsh.github.io'),
+  title: {
+    default: "Harsh | AI/ML Engineer & Developer",
+    template: "%s | Harsh",
+  },
+  description: "Portfolio of Harsh - Computer Vision, Agentic AI, and Systems Engineering. Explore projects, research, and achievements in AI/ML.",
+  keywords: ["AI", "Machine Learning", "Computer Vision", "Agentic AI", "Portfolio", "Developer", "Engineer", "Deep Learning"],
+  authors: [{ name: "Harsh" }],
+  creator: "Harsh",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://ctrlxharsh.github.io',
+    siteName: 'Harsh Portfolio',
+    title: 'Harsh | AI/ML Engineer & Developer',
+    description: 'Portfolio of Harsh - Computer Vision, Agentic AI, and Systems Engineering. Explore projects, research, and achievements in AI/ML.',
+    images: [
+      {
+        url: '/me/me.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Harsh - AI/ML Engineer',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Harsh | AI/ML Engineer & Developer',
+    description: 'Portfolio of Harsh - Computer Vision, Agentic AI, and Systems Engineering.',
+    images: ['/me/me.webp'],
+  },
+  alternates: {
+    canonical: 'https://ctrlxharsh.github.io',
+  },
+  verification: {
+    // Add your Google Search Console verification code here
+    google: 'l1kbiK6FCEK0qs2REkSevNIHTnSOxlPvytea7Pa9Fqc',
+  },
 };
 
 export default function RootLayout({
